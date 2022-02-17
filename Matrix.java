@@ -49,6 +49,7 @@ public Matrix mult(Matrix a, Matrix b) throws MatrixException {
     for (int j = 0; j < c; j++) {
       sum.array[i][j] = 0;
         for (int k = 0; k < c; k++) {
+          sum.array[i][j] += a.array[i][k] * b.array[k][j];
       } 
     }
   }
